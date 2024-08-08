@@ -24,7 +24,7 @@ The report should include the following columns:
 
 - `Group Name`: The name of the AeroPoint group,
 - `AeroPoints`: The total number of AeroPoints in each group
-- `Captures`: The total number of captures for each group.
+- `Captures`: The total number of captures for each group (**not just limited to London**)
 
 The bounding box coordinates for London are:
 North West / Top Left corner: 51.6919 (lat), -0.5104 (lon)
@@ -34,7 +34,7 @@ This API can be used to convert British National Grid eastings and northings to 
 
 To complete the challenge you will need to:
 
-- Write a script called `enrich_data.py` to pull data from the API and enrich the data in the database with the latitudes and longitudes of the captures.
+- Write a script called `enrich_data.py` to pull data from the API and enrich the data in the database with the latitudes and longitudes of the captures. Where you put the data in the database is up to you.
 - Write a script called `generate_report.py` to run an SQL query to generate and save the report in CSV format.
 
 You should think of these scripts as needing to be "production ready" and should be written in a way that they could be run as part of a scheduled job.
