@@ -34,9 +34,7 @@ This API can be used to convert British National Grid eastings and northings to 
 
 To complete the challenge you will need to:
 
-- Write a script called `enrich_data.py` to pull data from the API and enrich the data in the database with the latitudes and longitudes of the captures.
-    - it may take several minutes to receive the data from the API
-    - what 'enrich' means is up to you - you might insert the values into new columns in the table, or perhaps create a new table with the values, or something else
+- Write a script called `enrich_data.py` to pull data from the API and enrich the data in the database with the latitudes and longitudes of the captures. Where you put the data in the database is up to you.
 - Write a script called `generate_report.py` to run an SQL query to generate and save the report in CSV format.
 
 You should think of these scripts as needing to be "production ready" and should be written in a way that they could be run as part of a scheduled job.
