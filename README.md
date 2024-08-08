@@ -16,9 +16,9 @@ You can learn more about coordinate systems [here](https://www.propelleraero.com
 
 ## Challenge
 
-As a data engineer at Propeller it will very likely have to pull data from an API, store it in our data warehouse and generate views or reports from it for others to use.
+As a data engineer at Propeller it will very likely have to pull data from an API, store it in our data warehouse and generate views or export it for others to use.
 
-The challenge is for you to use the data in the provided `challenge.db` SQLite database to produce a report in CSV format that lists AeroPoint groups that have been used at least once in London.
+The challenge is for you to use the data in the provided `challenge.db` SQLite database to produce a CSV export that lists AeroPoint groups that have been used at least once in London.
 
 The report should include the following columns:
 
