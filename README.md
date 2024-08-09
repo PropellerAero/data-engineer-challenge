@@ -23,12 +23,15 @@ The challenge is for you to use the data in the provided `challenge.db` SQLite d
 The report should include the following columns:
 
 - `Group Name`: The name of the AeroPoint group,
-- `AeroPoints`: The total number of AeroPoints in each group
-- `Captures`: The total number of captures for each group (**not just limited to London**)
+- `AeroPoints`: The **total** number of AeroPoints in each group
+- `Captures`: The **total** number of captures for each group
+- (the "used at least once in London" condition is only to filter the AeroPoint groups, the "total number" calculation is not limited to London)
 
 The bounding box coordinates for London are:
-North West / Top Left corner: 51.6919 (lat), -0.5104 (lon)
-South East / Bottom Right corner: 51.2868 (lat), 0.3340 (lon)
+
+- North West / Top Left corner: `51.6919` (lat), `-0.5104` (lon)
+- South East / Bottom Right corner: `51.2868` (lat), `0.3340` (lon)
+- (latitude is about "up" and "down", longitude is about "left" and "right")
 
 This API can be used to convert British National Grid eastings and northings to latitudes and longitudes: https://www.getthedata.com/bng2latlong
 
