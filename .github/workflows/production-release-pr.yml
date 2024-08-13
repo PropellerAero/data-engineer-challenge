@@ -1,0 +1,23 @@
+# Automatically creates a Product Release PR when anything is committed to main.
+name: Create Production Release PR
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  create-draft-release-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v4
+
+      - name: Create Production Release PR
+        uses: PropellerAero/auto-create-pr-action@master
+        env:
+          BRANCH_PREFIX: "main"
+          BASE_BRANCH: "main"
+          PULL_REQUEST_TITLE: "[Production Release]"
+          PULL_REQUEST_DRAFT: "false"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
